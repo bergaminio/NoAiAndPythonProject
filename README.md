@@ -5,5 +5,5 @@ Rules:
 - Programming Language PYTHON
 - Goal: to understand how to Code properly
 - 2 Seperate Projects, but we help eachother
-- Project one : Undefind
-- Project two : Undefind
+- Project one : Undefind (Mike)
+- Project two : Undefind (Thierry)
