@@ -1,0 +1,2 @@
+# NoAiAndPythonProject
+Rules:
