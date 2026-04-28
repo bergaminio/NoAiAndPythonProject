@@ -28,10 +28,10 @@ print(f"the new price of sushi is {price} dollars")
 
 #type conversion
 print(type(Name))# Output: <class 'str'>
-price_float = int(price) 
+price_float = int(price)
 print(price_float)# Output: 16
 
 #user input
 favorite_sushi = str
 favorite_sushi = input("enter your favorite sushi: ")
-print(f"your favorite sushi is {favorite_sushi}")# git add main.qaevhupauo fbhERPHLBuvaalbuI
+print(f"your favorite sushi is {favorite_sushi}")# git add main
