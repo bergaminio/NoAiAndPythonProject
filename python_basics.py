@@ -4,6 +4,8 @@
 first_name = "Thierry"
 food = "Pizza"
 email = "thierry.oesch@icloud.com"
+print(first_name)
+
 
 # Integers
 # for Numbers

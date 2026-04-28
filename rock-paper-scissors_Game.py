@@ -6,6 +6,12 @@ play_again_option = ("y", "n")
 
 running = True
 
+win = 0
+
+lose = 0
+
+no_winner = 0
+
 print("Welcome to the Rock-Paper-Scissors-Game")
 
 while running:
@@ -14,22 +20,30 @@ while running:
     computer = random.choice(options)
 
     while player not in options:
-        player = input("Enter a Option: ")
+        
+            player = input("Enter a Option: ").lower()
 
     print(f"Player: {player}")
     print(f"Computer: {computer}")
 
 
     if player == computer:
-        print("No Winner!")
+        print("No Winner!!!!")
+        no_winner = no_winner + 1
     elif player == "rock" and computer == "scissors":
-        print("You Win!")
+        print("You Win!!!!")
+        win = win + 1
     elif player == "scissors" and computer == "paper":
-        print("You Win!")
+        print("You Win!!!!")
+        win = win + 1
     elif player == "paper" and computer == "rock":
-        print("You Win!")
+        print("You Win!!!!")
+        win = win + 1
     else:
-        print("You Lose!")
+        print("You Lose!!!!")
+        lose = lose + 1
+
+    print(f"\nWins: {win}\nLoses: {lose}\nNo Winner: {no_winner}")
 
     play_again = None
 
@@ -37,5 +51,9 @@ while running:
         play_again = input("Play agin? (y/n): ").lower()
         if play_again == "n":
             running = False
+        elif play_again == "y":
+            running = True
+        else:
+            print("Not an Option!!!!!!!!!!!!!")
 
 print("Thanks for playing ")
