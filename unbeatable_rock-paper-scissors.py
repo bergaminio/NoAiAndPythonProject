@@ -1,4 +1,3 @@
-import random
 import time
 
 options = ("rock", "paper", "scissors")
@@ -18,16 +17,25 @@ print("Welcome to the Rock-Paper-Scissors-Game")
 while running:
 
     player = None
-    computer = random.choice(options)
+    computer = None
+
 
     while player not in options:
         
             player = input("Enter a Option: ").lower()
 
+    if player == "rock":
+        computer = "paper"
+    elif player == "scissors":
+        computer = "rock"
+    elif player == "paper":
+        computer = "scissors"
+
     print(f"Player: {player}")
+
     print(f"Computer: {computer}")
 
-    time.sleep(1)
+    time.sleep(1.5)
     if player == computer:
         print("No Winner!!!!")
         no_winner = no_winner + 1
@@ -43,6 +51,12 @@ while running:
     else:
         print("You Lose!!!!")
         lose = lose + 1
+
+
+
+
+
+
 
     print(f"\nWins: {win}\nLoses: {lose}\nNo Winner: {no_winner}")
 

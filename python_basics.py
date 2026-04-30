@@ -51,4 +51,3 @@ if is_student:
     print("\nYou are a Student") # it will print this when the is_student variable is True
 else:
     print("You are NOT a student") # it will print this when the is_student variable is False
-
