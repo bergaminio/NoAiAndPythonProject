@@ -6,11 +6,7 @@ play_again_option = ("y", "n")
 
 running = True
 
-win = 0
-
 lose = 0
-
-no_winner = 0
 
 print("Welcome to the Rock-Paper-Scissors-Game")
 
@@ -35,30 +31,13 @@ while running:
 
     print(f"Computer: {computer}")
 
-    time.sleep(1.5)
-    if player == computer:
-        print("No Winner!!!!")
-        no_winner = no_winner + 1
-    elif player == "rock" and computer == "scissors":
-        print("You Win!!!!")
-        win = win + 1
-    elif player == "scissors" and computer == "paper":
-        print("You Win!!!!")
-        win = win + 1
-    elif player == "paper" and computer == "rock":
-        print("You Win!!!!")
-        win = win + 1
-    else:
-        print("You Lose!!!!")
-        lose = lose + 1
+    time.sleep(0.5)
+
+    print("You Lose!!!!")
+    lose = lose + 1
 
 
-
-
-
-
-
-    print(f"\nWins: {win}\nLoses: {lose}\nNo Winner: {no_winner}")
+    print(f"\nWins: 0\nLoses: {lose}\nNo Winner: 0")
 
     play_again = None
 
