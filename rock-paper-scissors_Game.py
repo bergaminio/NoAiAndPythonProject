@@ -19,9 +19,11 @@ while running:
 
     player = None
     computer = random.choice(options)
+    print("Rock - Paper - Scissors")
+    player = input("Enter a Option: ").lower()
 
     while player not in options:
-        
+            print("That is not an Option!")
             player = input("Enter a Option: ").lower()
 
     print(f"Player: {player}")
@@ -57,4 +59,4 @@ while running:
         else:
             print("Not an Option!!!!!!!!!!!!!")
 
-print("Thanks for playing ")
+print("Thanks for playing!")

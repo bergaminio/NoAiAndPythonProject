@@ -125,7 +125,7 @@ print(f"Your total is: {round(total, 2)} Fr.") #with rounding
 #addition
 friends = 0
 
-friends = friends + 1 #or
+friends = friends + 1 #or ogmented
 friends += 5
 #subbtraktion
 friends -= 1
@@ -140,3 +140,10 @@ remainerder = friends % 6
 
 print (remainerder)
 print(friends)
+
+#round 
+x = 3.141592
+print(type(x))
+x = round(x)
+print(x)
+print(type(x))
